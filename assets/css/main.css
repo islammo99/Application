@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --cols: calc(100%/12);
+}
+body {
+    background-color: rgba(219, 219, 219, 0.575);
+}
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 0px 4px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-15 { 
+    margin-bottom: 15px;
+}
+.mb-30 {
+    margin-bottom : 30px
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.text-center{
+    text-align: center;
+}
+.form-label {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.form-control {
+    width: 100%; 
+    padding: 4px;
+    border: 2px solid rgba(128, 128, 128, 0.301);
+    border-radius: 4px;
+    transition: border-color 0.4s;
+}
+.form-control:focus-visible{
+    outline: none;
+    border-color: grey;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border:1px solid rgba(128, 128, 128, 0.301);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.card-body {
+    padding: 8px;
+}
+.card .card-title {
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.card .card-text {
+    margin-bottom: 8px;
+}
+.img-fluid {
+    width: 100%;
+}
+.col-lg-12 {
+    width: calc(var(--cols)*12);
+    padding: 0px 6px;
+}
+.col-lg-4 {
+    width: calc(var(--cols)*4);
+    padding: 0px 6px;
+}
+.col-lg-6 {
+    width: calc(var(--cols)*6);
+    padding: 0px 6px;
+}
+.btn {
+    border: none;
+    background: none;
+    outline: none;   
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 2s;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: green;
+}
+.btn-danger {
+    background-color: red;
+}
+.btn-success {
+    background-color: blue;
+}
+.btn-warning {
+    background-color: orange;
+}
+
+@media (max-width:992px){
+    .col-md-6 {
+        width: calc(var(--cols)*6);
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width:767px) {
+    .container {
+        width: 100%;
+    }
+    .col-sm-10 {
+        width: calc(var(--cols)*10);
+    }
+    .justify-content-sm-center {
+        justify-content: center;
+    }
+}
+@media (max-width:576px){
+    .col-12 {
+        width: calc(var(--cols)*12);
+    }
+}
