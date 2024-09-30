@@ -7,7 +7,7 @@ let applicantsRow = document.querySelector("#applicants")
 let applicants = JSON.parse(localStorage.getItem("applicants")) || [];
 
 sumbitBtn.addEventListener("click", ()=>{
-    if(sumbitBtn.innerText == "Sumbit") {
+    if(sumbitBtn.innerText == "Submit") {
         addApplicant();
     } else {
         updateApplicant();
